@@ -57,3 +57,18 @@ ScrollReveal().reveal(".destination-container .destination-card", {
     delay: 800,
     interval: 300,
 });
+
+ScrollReveal().reveal(".discount-content h2", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".discount-content p", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".discount-content .discount-btn", {
+    ...scrollRevealOption,
+    origin: "left",
+    delay: 1000,
+});

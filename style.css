@@ -262,10 +262,53 @@ nav {
     }
 }
 
+.discount {
+    background-image: linear-gradient(
+            rgba(35, 71, 103, 0.5), 
+            rgba(35, 71, 103, 0.5)
+        ),
+        url("assets/bg-2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.discount-container {
+    padding: 10rem 1 rem;
+    display: flex;
+    justify-content: center;
+}
+
+.discount-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--light-color);
+}
+
+.discount-content h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.discount-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+}
+
+
+
 @media (width > 540px) {
     .destination-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    
 }
 
  
@@ -310,10 +353,22 @@ nav {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .discount-container {
+        justify-content: flex-end;
+    }
+
+    .discount-content {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+
 }
 
 @media (width > 1024px) {
+
     .destination-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }

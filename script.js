@@ -72,3 +72,18 @@ ScrollReveal().reveal(".discount-content .discount-btn", {
     origin: "left",
     delay: 1000,
 });
+
+ScrollReveal().reveal(".feature-container .section-header", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".feature-container .section-subheader", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".feature-container .feature-card", {
+    interval: 500,
+    delay: 1500,
+});
+

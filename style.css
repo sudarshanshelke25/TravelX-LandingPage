@@ -85,6 +85,11 @@ body {
     justify-content: center;
     overflow: hidden;
     min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+    );
+    z-index: -1;
 }
 
 nav {
@@ -160,9 +165,6 @@ nav {
 }
 
 .header-bg {
-    background-image: 
-    radial-gradient(black, black, black
-    )
 }
 
 .video-bg {
@@ -173,7 +175,7 @@ nav {
     height: 100vh;
     overflow: hidden;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
 .header-container {
@@ -207,8 +209,12 @@ nav {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: left;
+}
+
+.header-content .header-btn {
+    margin-bottom: 1rem;
 }
 
 .destination-container {
@@ -264,8 +270,8 @@ nav {
 
 .discount {
     background-image: linear-gradient(
-            rgba(35, 71, 103, 0.5), 
-            rgba(35, 71, 103, 0.5)
+            rgba(25, 51, 74, 0.5), 
+            rgba(25, 51, 74, 0.6)
         ),
         url("assets/bg-2.jpg");
     background-position: center center;

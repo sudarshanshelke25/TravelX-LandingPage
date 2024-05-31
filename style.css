@@ -378,6 +378,73 @@ nav {
         
 }
 
+.testimonial {
+
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.customer-card {
+    padding: 2rem;
+    max-width: 400px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.customer-card > div {
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.customer-card > div > i {
+    position: relative;
+    transform: rotate(-180deg);
+    color: var(--primary-color-dark);
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.customer-card p {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.customer-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.customer-card h3::before {
+    content: "-";
+}
+
+.customer-card:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), -2px -2px 10px rgba(0, 0, 0, 0.1);
+
+    div >i {
+        transform: scale(1.2);
+    }
+    
+    h3 {
+        color: var(--btn-color-1);
+    }
+}
+
+
 
 @media (width > 540px) {
     .destination-grid {
@@ -477,6 +544,10 @@ nav {
         font-size: 0.9rem;
     }
 
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media (width > 1024px) {
@@ -499,5 +570,9 @@ nav {
     
     .feature-card p {
         font-size: 1rem;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

@@ -87,3 +87,18 @@ ScrollReveal().reveal(".feature-container .feature-card", {
     delay: 1500,
 });
 
+ScrollReveal().reveal(".testimonial-container .section-header", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".testimonial-container .section-subheader", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".testimonial-container .customer-card", {
+    ...scrollRevealOption,
+    delay: 1000,
+    interval: 500,
+});
+

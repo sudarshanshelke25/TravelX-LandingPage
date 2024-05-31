@@ -165,15 +165,18 @@ nav {
 }
 
 .video-bg {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .header-container {
-    position: fixed;
+    position: absolute;
     height: 100%;
     width: 100%;
     display: flex;
@@ -211,7 +214,7 @@ nav {
 @media (width > 768px) {
 
     nav {
-        position: fixed;
+        position: absolute;
         padding: 2rem 1rem;
         display: flex;
         align-items: center;

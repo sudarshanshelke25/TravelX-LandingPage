@@ -42,3 +42,18 @@ ScrollReveal().reveal(".nav-links li", {
     delay: 1000,
     interval: 400,
 });
+
+ScrollReveal().reveal(".destination-container .section-header", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".destination-container .section-subheader", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".destination-container .destination-card", {
+    ...scrollRevealOption,
+    delay: 800,
+    interval: 300,
+});
